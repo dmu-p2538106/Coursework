@@ -1,0 +1,12 @@
+p {
+  color: red;
+  font-size: 1.5em;
+
+}
+footer {
+  background-color: light grey;
+}
+footer p[
+color: red;
+font-size: 1em;
+]
