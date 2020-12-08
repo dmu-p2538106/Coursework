@@ -1,0 +1,100 @@
+
+/*Most of the elements have styling put on them so that my website is asthetically pleasing. This is done by using CSS and putting all styling elements into it to keep work organised and helps catogorise things*/
+h1 {
+  color: white;
+  font-size: 80pt;
+  font-family: fantasy;
+  text-align: center;
+}
+
+h2 {
+  color: white;
+  font-size: 35pt;
+  font-family: fantasy;
+  text-align: center;
+}
+
+h4{
+  font-family: fantasy;
+  color: white;
+}
+
+Body {
+  background-color: skyblue;
+}
+
+p {
+  font-family: fantasy;
+  color: white;
+}
+
+img {
+  max-width: 100%
+}
+
+.menuItem {
+  color: white;
+  background-color: skyblue;
+  font-family: fantasy;
+  font-size: 30pt;
+}
+
+.homeP {
+  font-size: 20pt;
+}
+
+.Container {
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+.merylImage {
+  flex-basis: 50%
+}
+
+.merylP {
+  flex-basis: 50%;
+
+}
+
+.waterimg{
+  margin-top: 140px
+}
+
+.amandaImage{
+  flex-basis: 50%
+}
+
+.amandaP{
+  flex-basis: 50%
+}
+
+.menuContainer{
+  align-items: center;
+}
+
+.boarder{
+  border: 4px solid white;
+  border-radius: 10px;
+  background-color: lightsalmon;
+  padding: 5px;
+  margin: 10px;
+}
+
+.menuContainer{
+  margin: auto;
+}
+
+a{
+  color: white;
+  font-family: fantasy;
+  font-size: 22pt
+}
+
+.audioControls{
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
