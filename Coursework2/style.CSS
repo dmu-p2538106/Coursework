@@ -1,0 +1,142 @@
+body{
+  color:black;
+  font-family: serif;
+}
+
+h1{
+  font-size: 80pt;
+}
+
+h2{
+  font-size: 40pt;
+  border: thick solid black;
+  background-color: d6b7b5;
+  margin: 0 400 50;
+  text-align: center;
+}
+
+h3{
+
+}
+
+a{
+font-size: 30pt;
+text-decoration: none;
+}
+
+p{
+
+}
+
+div::after{
+  content: '';
+  display: block;
+  clear: both;
+}
+
+img{
+
+}
+
+/*move text right*/
+.webHeader{
+  border: thick solid black;
+  background-color: d6b7b5;
+}
+
+.headerBorder{
+  background-color: e5b2b2;
+  padding: 10px;
+  margin: 50px 50px 0px;
+  border: thick solid black;
+}
+
+.webHeader h1 {
+  float: left;
+  padding-left: 30px;
+  padding-right: 200px;
+}
+
+.webHeader image{
+  float: right;
+}
+
+/*center text, change font, space inbetween*/
+.menubar{
+  border: medium solid black;
+  background-color: pink;
+  margin: 20px 50px 50px;
+  text-align: center;
+}
+
+.menubar a{
+margin: 50;
+}
+
+.paragraph{
+  margin: 20px 50px 50px;
+  border: thick solid black;
+  background-color: pink;
+  padding: 10px
+}
+
+.p1 img{
+  float:left;
+}
+.p1 p{
+  float:right;
+}
+
+@keyframes Waitress {
+
+0%{
+left: 0%;
+}
+
+50%{
+left:50%;
+}
+
+100%{
+left:100%;
+}
+
+}
+
+.WAnimation{
+  animation: Waitress 5s 0s infinite;
+  height: 485px;
+  width: 100%;
+  position: relative;
+}
+
+.WAnimation img{
+  Width: 393px;
+}
+
+.externalLink{
+  display: block;
+ margin-left: auto;
+ margin-right: auto;
+ width: 50%
+}
+
+.Ingredients{
+  display: flex;
+}
+
+.Ingredientslist{
+  margin: 20px 50px 50px;
+  border: thick solid black;
+  background-color: pink;
+  padding: 10px
+  flex: 20%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.t1{
+  flex 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
