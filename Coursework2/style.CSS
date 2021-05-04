@@ -1,31 +1,45 @@
+* {box-sizing: border-box}
+
 body{
   color:black;
   font-family: serif;
+  min-width: 550px;
+  margin: 0px 50px 0px;
 }
 
 h1{
-  font-size: 80pt;
+  font-size: 4vw;
+  padding-left: 20px;
+
 }
 
 h2{
-  font-size: 40pt;
+  font-size: 2vw;
   border: thick solid black;
   background-color: d6b7b5;
-  margin: 0 400 50;
   text-align: center;
+  margin-left: 30%;
+  margin-right: 30%;
+  min-width:auto;
 }
 
 h3{
+  border: thick solid black;
+  background-color: d6b7b5;
+  text-align: center;
+}
 
+h4{
+  size: 2vh;
 }
 
 a{
-font-size: 30pt;
 text-decoration: none;
+color: black;
 }
 
-p{
-
+a:visited {
+  color: black;
 }
 
 div::after{
@@ -34,47 +48,53 @@ div::after{
   clear: both;
 }
 
-img{
-
-}
-
-/*move text right*/
 .webHeader{
-  border: thick solid black;
   background-color: d6b7b5;
-}
-
-.headerBorder{
-  background-color: e5b2b2;
-  padding: 10px;
-  margin: 50px 50px 0px;
   border: thick solid black;
+  text-align: center;
 }
 
 .webHeader h1 {
   float: left;
-  padding-left: 30px;
-  padding-right: 200px;
 }
 
 .webHeader image{
-  float: right;
+  width: 20%;
 }
 
-/*center text, change font, space inbetween*/
+.headerBorder{
+  background-color: e5b2b2;
+  border: thick solid black;
+  padding: 10;
+}
+
 .menubar{
   border: medium solid black;
   background-color: pink;
-  margin: 20px 50px 50px;
   text-align: center;
+  width: 100%;
+  overflow: auto;
+  margin-top: 20px;
 }
 
-.menubar a{
-margin: 50;
+.menubar a {
+  float: left;
+  padding: 12px;
+  font-size: 24px;
+  font-weight: bold;
+  width: 25%;
+}
+@media screen and (max-width: 500px) {
+  .menubar a {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
 }
 
 .paragraph{
-  margin: 20px 50px 50px;
+  margin: 20px 0px 50px;
   border: thick solid black;
   background-color: pink;
   padding: 10px
@@ -82,43 +102,56 @@ margin: 50;
 
 .p1 img{
   float:left;
-}
-.p1 p{
-  float:right;
-}
-
-@keyframes Waitress {
-
-0%{
-left: 0%;
+  width: 50%;
+  margin: 0 10 0 10;
 }
 
-50%{
-left:50%;
+.p2 ol{
+ float: left;
+ width: 50%;
+ padding-right: 10px;
+}
+.p2 img{
+  width: 50%;
 }
 
-100%{
-left:100%;
+.p3{
+  text-align: center;
 }
 
+.p4{
+  text-align: center;
 }
 
-.WAnimation{
-  animation: Waitress 5s 0s infinite;
-  height: 485px;
-  width: 100%;
-  position: relative;
+.lemon{
+float: left;
+width: 47%;
+margin-right: 6%;
 }
 
-.WAnimation img{
-  Width: 393px;
+.lemon2{
+  width: 47%;
+
+}
+.vanilla2{
+  float: left;
+  width: 47%;
+  height: 50%;
+  margin-right: 6%;
+}
+
+.vanilla3{
+  width: 47%;
+  height: 50%;
 }
 
 .externalLink{
-  display: block;
- margin-left: auto;
- margin-right: auto;
- width: 50%
+ text-align: center;
+}
+
+.externalLink img{
+  width: 350px;
+  height: 400px;
 }
 
 .Ingredients{
@@ -126,17 +159,41 @@ left:100%;
 }
 
 .Ingredientslist{
-  margin: 20px 50px 50px;
+  margin: 20px 20px 30px;
   border: thick solid black;
   background-color: pink;
-  padding: 10px
-  flex: 20%;
-  margin-left: auto;
-  margin-right: auto;
+  padding: 20px;
+  width: 30%;
 }
 
-.t1{
-  flex 50%;
-  margin-left: auto;
-  margin-right: auto;
+.audiocontrols{
+  text-align: center;
+  margin-bottom: 20px;
 }
+
+.videocontrols{
+  width: 70%;
+}
+
+@keyframes Waitress {
+
+  0%{
+  left: 0%;
+  }
+
+  50%{
+  left:50%;
+  }
+
+  100%{
+  left:100%;
+  }
+
+  }
+
+  .WAnimation{
+    animation: Waitress 5s 0s infinite;
+    height: 485px;
+    width: 393px;
+    position: relative;
+  }
