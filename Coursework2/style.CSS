@@ -3,33 +3,29 @@
 body{
   color:black;
   font-family: serif;
-  margin: 0px 50px 0px;
+  min-width: 360px;
+  margin: 5px;
 }
 
 h1{
-  font-size: 4vw;
   padding-left: 20px;
-
+  font-size: 72px;
 }
 
 h2{
-  font-size: 2vw;
+  
   border: thick solid black;
-  background-color: d6b7b5;
+  background-color: #d6b7b5;
   text-align: center;
-  margin-left: 30%;
-  margin-right: 30%;
+  margin-left: 20%;
+  margin-right: 20%;
   min-width:auto;
 }
 
 h3{
   border: thick solid black;
-  background-color: d6b7b5;
+  background-color: #d6b7b5;
   text-align: center;
-}
-
-h4{
-  size: 2vh;
 }
 
 a{
@@ -48,7 +44,7 @@ div::after{
 }
 
 .webHeader{
-  background-color: d6b7b5;
+  background-color: #d6b7b5;
   border: thick solid black;
   text-align: center;
 }
@@ -57,14 +53,16 @@ div::after{
   float: left;
 }
 
-.webHeader image{
-  width: 20%;
+.Logo{
+  width: 200px;
+  height: 200px;
 }
 
 .headerBorder{
-  background-color: e5b2b2;
+  background-color: #e5b2b2;
   border: thick solid black;
-  padding: 10;
+  padding: 10px;
+  margin-top: 10px;
 }
 
 .menubar{
@@ -83,6 +81,7 @@ div::after{
   font-weight: bold;
   width: 25%;
 }
+
 @media screen and (max-width: 500px) {
   .menubar a {
     float: none;
@@ -90,6 +89,7 @@ div::after{
     width: 100%;
     text-align: left;
   }
+  
 }
 
 .paragraph{
@@ -99,10 +99,10 @@ div::after{
   padding: 10px
 }
 
-.p1 img{
+.bakingHistoryImg{
   float:left;
   width: 50%;
-  margin: 0 10 0 10;
+  margin: 0px 10px 0px 10px;
 }
 
 .p2 ol{
@@ -110,7 +110,8 @@ div::after{
  width: 50%;
  padding-right: 10px;
 }
-.p2 img{
+
+.butterImg{
   width: 50%;
 }
 
@@ -122,16 +123,23 @@ div::after{
   text-align: center;
 }
 
+.dummiesImg{
+  width: 360px;
+  height: auto;
+}
+
 .lemon{
-float: left;
-width: 47%;
-margin-right: 6%;
+  float: left;
+  width: 47%;
+  height: 50%;
+  margin-right: 6%;
 }
 
 .lemon2{
   width: 47%;
-
+  height: 50%;
 }
+
 .vanilla2{
   float: left;
   width: 47%;
@@ -153,25 +161,27 @@ margin-right: 6%;
   height: 400px;
 }
 
-.Ingredients{
-  display: flex;
-}
+/*.Ingredients{
+  
+}*/
 
 .Ingredientslist{
-  margin: 20px 20px 30px;
+  margin: 0px 0px 30px;
   border: thick solid black;
   background-color: pink;
-  padding: 20px;
-  width: 30%;
+  padding: 10px;
 }
 
-.audiocontrols{
-  text-align: center;
+.audioControls{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 20px;
 }
 
-.videocontrols{
-  width: 70%;
+video{
+  width: 100%;
+  height: auto;
 }
 
 @keyframes Waitress {
@@ -179,20 +189,21 @@ margin-right: 6%;
   0%{
   left: 0%;
   }
-
+  
   50%{
   left:50%;
   }
-
+  
   100%{
   left:100%;
   }
-
+  
   }
-
+  
   .WAnimation{
     animation: Waitress 5s 0s infinite;
     height: 485px;
     width: 393px;
     position: relative;
   }
+ 
